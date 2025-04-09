@@ -129,7 +129,6 @@ h1{
         flex-flow: row nowrap;
         width: 60rem;
         height: 45.6rem;
-        margin:auto;
     }
     main .card-img{
         width: 30rem;
@@ -146,6 +145,7 @@ h1{
         height: 100vh;
     }
     .attribution{
-        
+        position: absolute;
+        bottom: 0rem;
     }
   }
