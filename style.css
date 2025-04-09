@@ -1,0 +1,151 @@
+:root{
+    --background-color: hsl(30, 38%, 92%);
+    --background-card: hsl(0, 0%, 100%);
+    --title: hsl(212, 21%, 14%);
+    --font: hsl(228, 12%, 48%);
+    --btn-color: hsl(158, 36%, 37%);
+    --btn-color-hover: hsl(158, 42%, 18%);
+
+}
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    font-size: 62.5%;
+    background-color: var(--background-color);
+    width: 100%;
+    height: 100%;
+}
+
+/* mobile */
+
+main{
+    margin: 80px auto;
+    background-color: var(--background-card);
+    width: 35rem;
+    border-radius: 0.8rem;
+
+
+}
+main .card-img{
+    object-fit: cover;
+    object-position: center 27%;
+    display: block;
+    height: 34.2rem;
+    width: 35rem;
+    border-radius: 0.8rem 0.8rem 0 0;
+}
+.content{
+    padding:32px;
+}
+.category{
+    display: block;
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+    letter-spacing: 0.5rem;
+    line-height: 120%;
+    color: var(--font);
+    text-transform: uppercase;
+    margin-bottom: 2.4rem;
+    font-weight: medium;
+}
+h1{
+    font-family: 'Fraunces';
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: var(--title);
+    padding-bottom: 2.4rem;
+    line-height: 100%;
+}
+.description{
+    font-family: 'Montserrat';
+    line-height: 160%;
+    color: var(--font);
+    font-weight: medium;
+    font-size: 1.4rem;
+}
+.price{
+    display: flex;
+    align-items: center;
+    margin: 2.4rem 0;
+    width: 19.1rem;
+    justify-content: space-between;
+}
+.price strong{
+    font-family: 'Fraunces';
+    font-weight: bold;
+    font-size: 3.2rem;
+    line-height: 100%;
+    color: var(--btn-color);
+}
+.price del{
+    font-family: 'Montserrat';
+    font-size: 1.3rem;
+    color: var(--font);
+    line-height: 120%;
+    font-weight: medium;
+    align-items: center;
+}
+.btn-add img{
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: 0.8rem;
+}
+.btn-add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    background-color: var(--btn-color);
+    border: none;
+    border-radius: 0.8rem;
+    color: var(--background-card);
+    font-family: 'Montserrat';
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 110%;
+    
+}
+.attribution{ 
+    padding-bottom: 2rem;
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a{ 
+    color: var(--btn-color); 
+    text-decoration: none;
+}
+.attribution a:hover{
+    color: var(--btn-color-hover);
+}
+
+/* Tablette */
+@media (min-width: 768px) {
+    main{
+        display: flex;
+        flex-flow: row nowrap;
+        width: 60rem;
+        height: 45.6rem;
+        margin:auto;
+    }
+    main .card-img{
+        width: 30rem;
+        height: 45.6rem;
+        object-position:0%;
+        border-radius: 0.8rem 0 0 0.8rem;
+    }
+    body{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+        height: 100vh;
+    }
+    .attribution{
+        
+    }
+  }
